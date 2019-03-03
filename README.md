@@ -1,7 +1,8 @@
 # go-rest-api
 
 ### Prerequisites
-* Go
+* Go1.12+
+
 ### Getting Set Up
 * Download repository: `https://github.com/JGetByte/go-rest-api.git`
 * open Terminal or commandline and go to project
