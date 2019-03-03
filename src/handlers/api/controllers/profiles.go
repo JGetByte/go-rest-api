@@ -16,18 +16,18 @@ func NewProfilesControllers() *ProfilesController {
 }
 
 type myProfile struct {
-	Firstname  string
-	Lastname   string
-	Occupation string
-	Departure  string
+	firstname  string
+	lastname   string
+	occupation string
+	departure  string
 }
 
 func (c *ProfilesController) GetMyPorifle(res http.ResponseWriter, req *http.Request) {
 	p := myProfile{
-		Firstname:  "Steve",
-		Lastname:   "Rogers",
-		Occupation: "Hero",
-		Departure:  "Mavel",
+		firstname:  "Steve",
+		lastname:   "Rogers",
+		occupation: "Hero",
+		departure:  "Mavel",
 	}
 	json.NewEncoder(res).Encode(p)
 }
